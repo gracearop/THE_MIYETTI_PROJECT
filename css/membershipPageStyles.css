@@ -1,0 +1,284 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* MEMBERSHIP PAGE DESIGNS */
+
+.memberList {
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Distribute space between items */
+    border-radius: 10px;
+  }
+  
+  .memberBlog{
+    /* border-radius: 10%; */
+    flex-basis: calc(30% - 20px); /* 33.33% width with margin */
+    margin-bottom: 20px; /* Margin between each child */
+    /* background-color: black; Just for visualization */
+    /* box-sizing: border-box; Include padding and border in the width calculation */
+
+  }
+  .memberBlog {
+    display: grid; /* Use CSS Grid layout */
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    margin: 1.1rem;
+    width: 90%; /* Set the width of the parent div */
+    height: 300px; /* Set the height of the parent div */
+    border-radius: 15px;
+  }
+  
+  .images {
+    /* border-radius: inherit; */
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+     background-color: #141414;  /* Optionally, you can add other styles as needed */
+     
+  }
+  .images img{
+    width: 100%; /* Set the width of the image to 100% of its parent */
+    height: 100%; /* Set the height of the image to 100% of its parent */
+    object-fit: cover; /* Ensure the image covers the entire space of its parent */
+  }
+  .memberInformation{
+    padding: 1.1rem;
+    background-color: #ccc;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .memberName{
+    margin-bottom: 9px;
+    font-weight: bolder;
+  }
+  .memberJob{
+    margin-bottom: 12px;
+  }
+  .info1{
+    margin-bottom: 5px;
+  }
+  .pop{
+    background-color: lavender;
+    height: 4px;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+  .info2 p{
+    display: inline-block; /* Set headings to inline-block */
+    margin: 0; /* Remove default margins */
+  }
+  .info2{
+    margin-bottom: 5px;
+  }
+
+  .info3 p{
+    display: inline-block; /* Set headings to inline-block */
+    margin: 0; /* Remove default margins */
+  }
+
+.The_heading{
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+.one{
+    height: 7px;
+    width: 70%;
+    background-color: white;
+    margin: 0.5rem;
+    border-radius: 10px;
+}
+.two{
+    height: 7px;
+    width: 90%;
+    background-color: white;
+    margin: 0.5rem;
+    border-radius: 10px;
+}
+.three{
+    height: 7px;
+    width: 60%;
+    background-color: white;
+    margin: 0.5rem;
+    border-radius: 10px;
+}
+.mem{
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 3.5rem;
+    /* border: 1px solid lavender; */
+
+}
+.mem h1{
+    border: 2px solid skyblue;
+    padding: 1.1rem;
+    border-radius: 50px;
+}
+  /* Media query for smaller screens */
+  @media only screen and (max-width: 1074px) {
+    .memberBlog {
+      flex-basis: calc(40% - 20px); /* 50% width with margin */
+    }
+    .mem{
+        /* display: flex; */
+        /* justify-content: center; */
+        /* font-weight: bolder; */
+        font-size: 2rem;
+        margin-bottom: 5px;
+        /* border: 1px solid lavender; */
+    
+    }
+  }
+  
+  /* Media query for even smaller screens */
+  @media only screen and (max-width: 860px) {
+    .memberBlog {
+      flex-basis: calc(100% - 20px); /* 100% width with margin */
+    }
+  }
+  
+  @media screen and (max-width:500px){
+    .mem{
+        font-size: 1rem;
+    }
+  }
+
+  /* SWIPER SLIDE DESIGNS  */
+  .card{
+      /* width: 320px; */
+      border-radius: 25px;
+      background-color: #FFF;
+      /* margin-left: 20px; */
+  }
+  .image-content,
+  .card-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 14px;
+  }
+  .image-content{
+      position: relative;
+      row-gap: 5px;
+      padding: 25px 0;
+  }
+  .overlay{
+      position: absolute;
+      left: 0;
+      /* right: 0; */
+      top: 0;
+      height: 100%;
+      /* height: 100%; */
+      width: 100%;
+      background-color: #4070f4;
+      border-radius: 25px 25px 0 25px;
+  }
+  .overlay::before,
+  .overlay::after{
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: -40px;
+      height: 40px;
+      width: 40px;
+      background-color: #4070f4;
+      /* background-color: red; */
+  }
+  .overlay::after{
+      border-radius: 0 25px 0 0;
+      background-color: #fff;
+  }
+  
+  .card-image{
+      position: relative;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      background: #fff;
+      padding: 3px;
+  }
+  .card-image .card-img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      background: #FFF;
+      padding: 3px;
+      border: 4px solid #4070f4;
+  }
+  .name{
+      font-size: 18px;
+      font-weight: 500;
+      color: #333;
+      /* text-align: center; */
+  }
+  .description{
+      font-size: 18px;
+      color: #707070;
+      text-align: center;
+  }
+  .button{
+      border: none;
+      font-size: 16px;
+      color: #FFF;
+      padding: 8px 16px;
+      background-color: #4070f4;
+      border-radius: 6px;
+      margin: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+  }
+  .button:hover{
+      background: #265DF2;
+  }
+  .swiper-navBtn{
+      color: #6e93f7;
+      transition: color 0.3s ease;
+      
+  }
+  .swiper-navBtn:hover{
+      color: #4070f4;
+  }
+  .swiper-navBtn::before,
+  .swiper
+  -navBtn::after{
+      font-size: 40px;
+  }
+  swiper-button-next{
+      right: 0;
+      
+  }
+  swiper-button-prev{
+      left: 0;
+  }
+  swiper-pagination-bullet{
+      background-color: #6e93f7;
+      opacity: 1;
+  }
+  swiper-pagination-bullet-active{
+      background-color: #4070f4;
+  }
+  
+  
+.membershipButton{
+    margin: 50px 50px;
+    background-color: skyblue;
+    width: 10%;
+    border-radius: 10px;
+    padding: 2px;
+    color: white;
+    text-align: center;
+}
+.memberBlog{
+    margin-top: 3rem;
+}
+@media screen and (max-width:1024px){
+  .membershipButton{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+}

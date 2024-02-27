@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media screen and (max-width:775px){
+    /* .navbar{
+        width: 100%;
+        padding: ;
+    } */
+    .auth-content{
+        margin-top: 20px;
+    }
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+@media screen and (max-width: 757px) {
+    .logo{
+        font-size: 1.2rem;
+    }
+    .logo-menu{
+        font-size: 1.5rem;
+    }
+    /* .navbar{
+        gap: 2px;
+    } */
+}
+.navbar.scrolled span{
+    color: #4299e1;
+  }
+@media screen and (max-width: 420px) {
+    .logo{
+        font-size: 1rem;
+    }
+    /* .navbar{
+        gap: 2px;
+    } */
+}
+/* Example: Hide menu icon on larger screens */
+@media screen and (min-width: 1000px) {
+    .menu-icon {
+      display: none;
+    }
+  }
+  
+
+
+
+@media screen and (max-width: 600px) {
+    .caption p{
+        /* width: 90%; Full width on smaller screens */
+        color: darkblue;
+        /* display: ; */
+    }
+    .caption {
+        width: 100% !important;
+        margin: 0 auto !important;
+        /* display: block; */
+        /* float: right; */
+        margin-bottom: 5px !important;
+    }
+    .box1{
+        display: block !important;
+        justify-content: space-around;
+        flex-wrap:none ;
+        width: 100% !important;
+        background-color: lavender;
+        margin: 0 auto;
+        /* margin-top: 0; */
+    }
+
+
+
+}
+
+
+    @media screen and (max-width: 600px) {
+        
+    .container {
+        width: 100% !important;
+        /* max-width: 800px; */
+        /* margin: 20px auto; */
+        /* padding: 0 20px; */
+        /* background-color: skyblue; */
+      }
+      .box{
+        /* margin-top: 15px; */
+        display: block !important;
+        /* justify-content: space-evenly; */
+        /* gap: 15px; */
+        width: 100%;
+      }
+  
+      .committee-member {
+        /* background-color: white; */
+        padding: 30px !important;
+        /* margin-bottom: 20px;
+        border-radius: 5px; */
+      }
+  
+      .committee-member h2 {
+        color: skyblue !important;
+      }
+    .footer-bottom{
+        width: 100%;
+      }
+    }
+
+    
+        @media screen and (max-width: 800px) {
+            .my{
+                /* display: block; */
+                flex-wrap: wrap !important;
+                width: 50% !important;
+                margin: 0 auto !important;
+            }
+            .my1{
+                /* float: left; */
+                /* margin: 50px; */
+                width: 100% !important;
+                /* display: flex; */
+            }
+
+        }
+
+
+
+
+
+        /* Define styles for the class 'my' */
+.my {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+
+/* Apply base font size of 15px */
+.my {
+    font-size: 15px;
+}
+
+/* STYLES FOR THE MEMBERSHIP PAGE */

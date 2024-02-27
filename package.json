@@ -1,0 +1,19 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm-run-all build:css1 build:css2 build:css3",
+    "build:css1": "npx tailwindcss -i ./css/css.css -o ./dist/css.css --watch",
+    "build:css2": "npx tailwindcss -i ./css/membershipPageStyles.css -o ./dist/membershipPageStyles.css --watch",
+    "build:css3": "npx tailwindcss -i ./css/mystyles.css -o ./dist/mystyles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3",
+    "npm-run-all": "^5.1.2"
+  }
+}

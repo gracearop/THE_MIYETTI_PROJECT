@@ -1,0 +1,315 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="css/css.css">
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- Include Slick.js CSS and JS files -->
+  <!-- <link rel="stylesheet" href="Js/scripts.js"> -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- <link rel="stylesheet" href="/css.css"> -->
+  <style>
+    .header{
+    /* background-image: url('../IMAGES/NG-en-20231002-popsignuptwoweeks-perspective_alpha_website_medium.jpg'); */
+    /* display: flex; */
+    /* align-items: center; */
+    /* al
+    font-size: 20px;
+    gap: 1px;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+    
+     */
+     /* background-image: url('/src/images/13267914405_b2310f6ecb_b.jpg'); */
+     /* background-color: black; */
+
+     height: 100vh;
+
+}
+.image-container {
+    /* position: relative; */
+    /* Set the background image URL */
+    background-image: url('/images/13267914405_b2310f6ecb_b.jpg');
+    /* Set the background size, position, and other properties as needed */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* Set the desired opacity (0.5 for 50% opacity) */
+    /* opacity: 0.5; */
+    height: 100vh;
+    width: 500vh;
+}
+
+.navbar {
+  z-index: 88888;
+
+      /* transition: background-color 0.3s ease; */
+    }
+
+    .navbar.scrolled {
+      background-color: white;
+      /* margin-bottom: 20px; */
+       /* Change this to your desired background color */
+    }
+    
+    .navbar.scrolled ul{
+      background-color: white;
+    
+       /* Change this to your desired background color */
+    }
+    .navbar.scrolled ul li{
+      /* background-color: white; */
+      margin-bottom: 10px;
+       /* Change this to your desired background color */
+    }
+    .navbar.scrolled li a:hover{
+      /* background-color: white; */
+      background-color: #4a5568;
+       /* Equivalent to gray-700 in Tailwind CSS */
+}
+    .navbar li a:hover{
+      color: skyblue;
+      border-radius: 5px;
+      /* background-color: white; */
+      background-color: white; /* Equivalent to gray-700 in Tailwind CSS */
+}
+       /* Change this to your desired background color */
+    .navbar li{
+      margin-bottom: 10px;
+    }
+
+    .navbar-text {
+      color: white; /* Initial text color */
+    }
+
+    .navbar-text.scrolled {
+      color: #6cb2eb !important; /* Change this to your desired text color */
+    }
+    body{
+      background-color: lavender;
+    }
+  </style>
+</head>
+
+<body >
+  <header>
+    <!-- <img src="src/images/13267914405_b2310f6ecb_b.jpg" alt="" class="image-container"> -->
+    
+            <nav class="navbar bg- border-gray-200 dark:bg-blue-300 fixed top-0 w-[100%]" >
+                <div class="navbar flex flex-wrap items-center justify-between mx-auto p-4">
+                  <a href=>
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white navbar-text">MIYETTI ALLAH KAUTAL HORE</span>
+                  </a>
+    
+                  <span class="text-3xl cursor-pointer md:hidden block mx-2 text-blue-500">
+                    <ion-icon name="menu-sharp" onclick="Menu(this)"></ion-icon>
+                    <!-- <ion-icon name="close-sharp"></ion-icon> -->
+                  </span>
+        
+                    <ul class="navbar md:flex md:items-center space-around p-4 font-medium  rtl:space-x-reverse 
+                    md:mt-0 md:py-0 py-4 absolute bg-blue-300 
+                     md:items-center z-[-1] md:z-auto md:static 
+                      md:w-auto md:pl-0 pl-7 md:opacity-100 opacity-0
+                      ">
+                      <!-- bg-blue-300 -->
+                      <!-- transition-all ease-in duration-100 -->
+                      <li>
+                        <a href="index.html" class="navbar-text py-2 px-3 text-white md:bg-transparent md:text-blue-700 md:dark:text-blue-500 navbar  md:my-0" aria-current="page">Home</a>
+                      </li>
+                      <li>
+                        <a href="about.html" class="navbar-text py-2 px-3 text-white md:dark:hover:text-blue-500 navbar md:my-0">About</a>
+                      </li>
+                      <!-- <li>
+            
+                        <a href="membership.html" class="navbar-text navbar py-2 px-3 dark:text-white md:dark:hover:text-blue-500  md:my-0">Membership</a>
+                      </li> -->
+            
+                      <li>
+            
+                        <!-- <a href="news.html" class="navbar-text navbar py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">News</a> -->
+            
+                        <a href="news.html" class="navbar-text navbar py-2 px-3 text-gray-900 rounded  md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:text-white dark:border-gray-700  md:my-0">News</a>
+                      </li>
+                      <li>
+            
+                        <a href="events.html" class="navbar-text navbar py-2 px-3 text-gray-900 rounded md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:text-white  md:my-0">Events</a>
+                      </li>
+            
+                      <li>
+            
+                        <a href="committee.html" class="navbar-text py-2 px-3 md:dark:hover:text-blue-500 text-white navbar  md:my-0">Committee</a>
+                      </li>
+    
+                       
+                    <div class="relative inline-block mt-2 mb-2 mr-4">
+                      <button type="button" id="toggleButton" class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ml-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
+                      <div id="listContainer" class=" absolute left-0  z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 mt-2">
+                        <ul class=" py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                          <li>
+                            <a href="login.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Log In</a>
+                          </li>
+                          <li>
+                            <a href="signup.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign up</a>
+                          </li>
+    
+                        </ul>
+                        <div class="py-1 ">
+                          <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                        </div>
+                      </div>
+            
+                      <!--    div that brings the deropdown below -->
+                    </div>
+    
+                    <div class="relative ">
+                      <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-blue-500 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                        <span class="sr-only">Search icon</span>
+                      </div>
+                      <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-blue-500 border border-blue-500 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-white-700 dark:border-lavender dark:placeholder-blue-500 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+                    </div>
+            
+                    </ul>
+                    <!--      
+                            <button type="button" class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ml-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
+             -->
+            
+                  <!-- </div> -->
+                </div>
+              </nav>
+    
+    
+        </header>
+
+    <div class="auth-content const">
+        <form action="" method="post">
+            <h2 class="form-title">Register</h2>
+        
+            <!-- <div class="msg success error">
+                <li>Username required</li>
+            </div> -->
+<!--         
+            <div>
+                <label for="Username">Username: </label>
+                <input type="text" name="Username" class="p-2.5 px-4 w-full rounded-md border border-2 border-sky-300 text-gray-800 outline-none leading-6 text-lg">
+
+                
+                 <input type="text" name="Username" class="text-input"> -->
+            <!-- </div> -->
+            <div>
+                <label for="Email">Email: </label>
+                <input type="email" name="Email" class="p-2.5 px-4 w-full rounded-md border border-2 border-sky-300 text-gray-800 outline-none leading-6 text-lg">
+
+                <!-- <input type="email" name="Email" class="input"> -->
+            </div>
+            <div>
+              <label for="Password">Password:</label>
+              <input type="password" name="password" class="p-2.5 px-4 w-full rounded-md border border-2 border-sky-300 text-gray-800 outline-none leading-6 text-lg">
+
+                
+                <!-- <input type="password" name="Password" class="text-input"> -->
+            </div>
+            <!-- <div>
+              <label for="PasswordConf">Confirm Password: </label>
+              <input type="email" name="PasswordConf" class="p-2.5 px-4 w-full rounded-md border border-2 border-sky-300 text-gray-800 outline-none leading-6 text-lg">
+
+                 <label for="PasswordConf">Confirm Password: </label> -->
+                <!-- <input type="text" name="Passwordconf" class="text-input"> -->
+            <!-- </div> -->
+        
+            <button class="float-right bg-sky-300 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">
+              Register
+            </button>
+            
+<!--             
+            <div>
+                <button type="submit" name="resgister-btn" class="hover:bg-blue-800" style="padding: .5rem 1rem; color: white; border-radius: 5px; font-size: 1.08em; float: right; background-color: skyblue; float: right;">Register</button> 
+            </div> -->
+            <p>Or <a href="login.html">Sign In</a></p>
+        
+        </form>
+        </div>
+
+        <div class="footer">
+          <div class="footer-content">
+              <!-- <h2 class="touch-info">
+                  GET IN TOUCH WITH MIYETTI ALLAH KAUTAL HORE
+              </h2>
+              <h3 class="contact">
+                  <a href="#">CONTACT</a><br>US
+              </h3> -->
+              
+        
+        <div class="footer-bottom">
+          Copyright&copy;2022 MIYITTI ALLAH KAUTAL HORE
+          </div>
+          
+          </div>
+
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              const navbar = document.querySelector('.navbar');
+              const navbarText = document.querySelectorAll('.navbar-text');
+          
+              window.addEventListener('scroll', function () {
+                if (window.scrollY > 0) {
+                  navbar.classList.add('scrolled');
+                  navbarText.forEach(element => element.classList.add('scrolled'));
+                } else {
+                  navbar.classList.remove('scrolled');
+                  navbarText.forEach(element => element.classList.remove('scrolled'));
+                }
+              });
+            });
+          </script>
+          
+          <script>
+            function Menu(e){
+              let list = document.querySelector('ul')
+          
+              e.name ==='menu-sharp' ? (e.name = "close",list.classList.add('left-0'), list.classList.add('top-[70%]'), list.classList.add('w-[100%]'), list.classList.add('opacity-100')) 
+              : (e.name = 'menu-sharp',list.classList.remove('left-0'),list.classList.remove('top-[70%]'),list.classList.remove('w-[100%]'), list.classList.remove('opacity-100')) 
+            }
+          </script>
+          
+          
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const toggleButton = document.getElementById('toggleButton');
+              const listContainer = document.getElementById('listContainer');
+          
+              // Function to hide listContainer
+              function hideListContainer() {
+                listContainer.classList.add('hidden');
+              }
+          
+              toggleButton.addEventListener('click', function(event) {
+                // Prevent the click event from bubbling up to the document
+                event.stopPropagation();
+                listContainer.classList.toggle('hidden');
+              });
+          
+              document.addEventListener('click', function(event) {
+                const clickedElement = event.target;
+                // Check if the clicked element is not the toggleButton or within the listContainer
+                if (clickedElement !== toggleButton && !listContainer.contains(clickedElement)) {
+                  hideListContainer();
+                }
+              });
+            });
+          </script>
+        
+        </body>
+        </html>

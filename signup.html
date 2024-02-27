@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script> -->
+  <link rel="stylesheet" href="dist/mystyles.css">
+  <link rel="stylesheet" href="dist/css.css">
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- Include Slick.js CSS and JS files -->
+  <!-- <link rel="stylesheet" href="Js/scripts.js"> -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- <link rel="stylesheet" href="/css.css"> -->
+  <style>
+.navbar {
+  z-index: 88888;
+
+      /* transition: background-color 0.3s ease; */
+    }
+
+    .navbar.scrolled {
+      background-color: white;
+      /* margin-bottom: 20px; */
+       /* Change this to your desired background color */
+    }
+    
+    .navbar.scrolled ul{
+      background-color: white;
+    
+       /* Change this to your desired background color */
+    }
+    .navbar.scrolled ul li{
+      /* background-color: white; */
+      margin-bottom: 10px;
+       /* Change this to your desired background color */
+    }
+    .navbar.scrolled li a:hover{
+      /* background-color: white; */
+      background-color: #4a5568;
+       /* Equivalent to gray-700 in Tailwind CSS */
+}
+    .navbar li a:hover{
+      color: skyblue;
+      border-radius: 5px;
+      /* background-color: white; */
+      background-color: white; /* Equivalent to gray-700 in Tailwind CSS */
+}
+       /* Change this to your desired background color */
+    .navbar li{
+      margin-bottom: 10px;
+    }
+
+    .navbar-text {
+      color: white; /* Initial text color */
+    }
+
+    .navbar-text.scrolled {
+      color: #6cb2eb !important; /* Change this to your desired text color */
+    }
+
+  </style>
+</head>
+
+<body style="background-color: lavender;">
+  <header>
+    <!-- <img src="src/images/13267914405_b2310f6ecb_b.jpg" alt="" class="image-container"> -->
+    
+            <nav class="navbar bg-blue-300 border-gray-200 dark:bg-blue-300 fixed top-0 w-[100%]" >
+                <div class="navbar flex flex-wrap items-center justify-between mx-auto p-4">
+                  <a href=>
+                    <span class="logo self-center text-2xl font-semibold whitespace-nowrap dark:text-white navbar-text">MIYETTI ALLAH KAUTAL HORE</span>
+                  </a>
+    
+                  <span class="logo-menu text-3xl cursor-pointer md:hidden block mx-2 text-white">
+                    <ion-icon name="menu-sharp" onclick="Menu(this)"></ion-icon>
+                    <!-- <ion-icon name="close-sharp"></ion-icon> -->
+                  </span>
+        
+                    <ul class="navbar md:flex md:items-center space-around p-4 font-medium  rtl:space-x-reverse 
+                    md:mt-0 md:py-0 py-4 absolute bg-blue-300 
+                      z-[-1] md:z-auto md:static 
+                      md:w-auto md:pl-0 pl-7 md:opacity-100 opacity-0
+                      ">
+                      <!-- bg-blue-300 -->
+                      <!-- transition-all ease-in duration-100 -->
+                      <li>
+                        <a href="index.html" class="navbar-text py-2 px-3 text-white md:bg-transparent md:text-blue-700 md:dark:text-blue-500 navbar  md:my-0" aria-current="page">Home</a>
+                      </li>
+                      <li>
+                        <a href="about.html" class="navbar-text py-2 px-3 text-white md:dark:hover:text-blue-500 navbar md:my-0">About</a>
+                      </li>
+                      <li>
+                        <a href="membership.html" class="navbar-text py-2 px-3 text-white md:dark:hover:text-blue-500 navbar md:my-0">Membership</a>
+                      </li>
+                      <!-- <li>
+            
+                        <a href="membership.html" class="navbar-text navbar py-2 px-3 dark:text-white md:dark:hover:text-blue-500  md:my-0">Membership</a>
+                      </li> -->
+            
+                      <li>
+            
+                        <!-- <a href="news.html" class="navbar-text navbar py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">News</a> -->
+            
+                        <a href="news.html" class="navbar-text navbar py-2 px-3 text-gray-900 rounded  md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:text-white dark:border-gray-700  md:my-0">News</a>
+                      </li>
+                      <li>
+            
+                        <a href="events.html" class="navbar-text navbar py-2 px-3 text-gray-900 rounded md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:text-white  md:my-0">Events</a>
+                      </li>
+            
+                      <li>
+            
+                        <a href="committee.html" class="navbar-text py-2 px-3 md:dark:hover:text-blue-500 text-white navbar  md:my-0">Committee</a>
+                      </li>
+    
+                       
+                    <div class="relative inline-block mt-2 mb-2 mr-4">
+                      <button type="button" id="toggleButton" class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ml-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
+                      <div id="listContainer" class=" absolute left-0  z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 mt-2">
+                        <ul class=" py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                          <li>
+                            <a href="login.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Log In</a>
+                          </li>
+                          <li>
+                            <a href="signup.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign up</a>
+                          </li>
+    
+                        </ul>
+                        <div class="py-1 ">
+                          <a href="index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                        </div>
+                      </div>
+            
+                      <!--    div that brings the deropdown below -->
+                    </div>
+    
+                    <div class="relative">
+                      <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-blue-500 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                        <span class="sr-only">Search icon</span>
+                      </div>
+                      <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-black border border-blue-500 rounded-lg bg-white focus:outline-none focus:ring-sky-300 focus:border-blue-500 dark:bg-white dark:border-blue-500 dark:placeholder-blue-500 dark:text-black dark:focus:ring-blue-500 dark:focus:border-sky-300" placeholder="Search...">
+                    </div>
+                    
+            
+                    </ul>
+                    <!--      
+                            <button type="button" class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ml-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
+             -->
+            
+                  <!-- </div> -->
+                </div>
+              </nav>
+    
+    
+        </header>
+
+<section class="min-h-screen">
+  <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 mt-20" >
+<!--       <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white"> -->
+<!--           <img class="w-8 h-8 mr-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg" alt="logo"> -->
+<!--           Flowbite     -->
+<!--       </a> -->
+      <div class="w-full rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0 dark:border-sky-700" style="background-color: white;">
+          <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+              <h1 class="text-xl font-bold leading-tight tracking-tight text-black md:text-2xl dark:text-black">
+                  Create an account
+              </h1>
+              <form class="space-y-4 md:space-y-6" action="#">
+                  <div>
+                      <label for="name" class="block mb-2 text-sm font-medium text-black dark:text-black">Your Name</label>
+                      <input type="text" name="name" id="name" class="bg-gray-300 border border-white text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-300 dark:border-white dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter full name.." required="">
+                  </div>
+                  <div>
+                      <label for="email" class="block mb-2 text-sm font-medium text-black dark:text-black">Your email</label>
+                      <input type="email" name="email" id="email" class="bg-gray-300 border border-white text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-300 dark:border-white dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required="">
+                  </div>
+                  <div>
+                      <label for="password" class="block mb-2 text-sm font-medium text-black dark:text-black">Password</label>
+                      <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-300 border border-white text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-300 dark:border-white dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
+                  </div>
+                  <div>
+                      <label for="confirm-password" class="block mb-2 text-sm font-medium text-black dark:text-black">Confirm password</label>
+                      <input type="confirm-password" name="confirm-password" id="confirm-password" placeholder="••••••••" class="bg-gray-300 border border-white text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-300 dark:border-white dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
+                  </div>
+                  <div class="flex items-start">
+                      <div class="flex items-center h-5">
+                        <input id="terms" aria-describedby="terms" type="checkbox" class="w-4 h-4 border border-white rounded bg-gray-300 focus:ring-3 focus:ring-primary-300 dark:bg-gray-300 dark:border-white dark:focus:ring-primary-600 dark:ring-offset-gray-800" required="">
+                      </div>
+                      <div class="ml-3 text-sm">
+                        <label for="terms" class="font-light text-black dark:text-black">I accept the <a class="font-medium text-primary-600 hover:underline dark:text-primary-500" href="#">Terms and Conditions</a></label>
+                      </div>
+                  </div>
+                  <button type="submit" class="w-full text-white bg-black hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-black dark:hover:bg-gray-600 dark:focus:ring-primary-800">Create an account</button>
+                  <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+                      Already have an account? <a href="login.html" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Login here</a>
+                  </p>
+              </form>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+<div class="footer">
+    <div class="footer-content">
+        <!-- <h2 class="touch-info">
+            GET IN TOUCH WITH MIYETTI ALLAH KAUTAL HORE
+        </h2>
+        <h3 class="contact">
+            <a href="#">CONTACT</a><br>US
+        </h3> -->
+        
+  
+  <div class="footer-bottom">
+    Copyright&copy;2022 MIYITTI ALLAH KAUTAL HORE
+    </div>
+    
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const navbar = document.querySelector('.navbar');
+        const navbarText = document.querySelectorAll('.navbar-text');
+    
+        window.addEventListener('scroll', function () {
+          if (window.scrollY > 0) {
+            navbar.classList.add('scrolled');
+            navbarText.forEach(element => element.classList.add('scrolled'));
+          } else {
+            navbar.classList.remove('scrolled');
+            navbarText.forEach(element => element.classList.remove('scrolled'));
+          }
+        });
+      });
+    </script>
+    
+    <script>
+      function Menu(e){
+        let list = document.querySelector('ul')
+    
+        e.name ==='menu-sharp' ? (e.name = "close",list.classList.add('left-0'), list.classList.add('top-[70%]'), list.classList.add('w-[100%]'), list.classList.add('opacity-100')) 
+        : (e.name = 'menu-sharp',list.classList.remove('left-0'),list.classList.remove('top-[70%]'),list.classList.remove('w-[100%]'), list.classList.remove('opacity-100')) 
+      }
+    </script>
+    
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const toggleButton = document.getElementById('toggleButton');
+        const listContainer = document.getElementById('listContainer');
+    
+        // Function to hide listContainer
+        function hideListContainer() {
+          listContainer.classList.add('hidden');
+        }
+    
+        toggleButton.addEventListener('click', function(event) {
+          // Prevent the click event from bubbling up to the document
+          event.stopPropagation();
+          listContainer.classList.toggle('hidden');
+        });
+    
+        document.addEventListener('click', function(event) {
+          const clickedElement = event.target;
+          // Check if the clicked element is not the toggleButton or within the listContainer
+          if (clickedElement !== toggleButton && !listContainer.contains(clickedElement)) {
+            hideListContainer();
+          }
+        });
+      });
+    </script>
+  
+</body>
+
+</html>
